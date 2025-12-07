@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UKPLAST — Вироби з ПЕТ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">UKPLAST</div>
+    <nav>
+        <a href="#about">Про нас</a>
+        <a href="#products">Продукція</a>
+        <a href="#plastics">Термопласти</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>UKPLAST — ПЕТ продукція та видув пляшок</h1>
+        <p>Ми спеціалізуємось на ПЕТ-преформах, ПЕТ-пляшках та послугах видуву.</p>
+        <a href="#products" class="btn">Каталог</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>Про компанію</h2>
+    <p>UKPLAST — виробник та постачальник пластикової тари та ПЕТ-продукції. Ми виготовляємо преформи, пляшки та виконуємо видув на замовлення.</p>
+</section>
+
+<section id="products" class="section">
+    <h2>Продукція</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/84770f_4a1a3a2d4e5d4fd290f2b2d80139f1c7~mv2.png/v1/fill/w_640,h_480,al_c,q_90,enc_auto/84770f_4a1a3a2d4e5d4fd290f2b2d80139f1c7~mv2.png">
+            <h3>ПЕТ-Преформа</h3>
+            <p>Преформи різних ваг та різьб.</p>
+            <a href="products/pet_preform.html" class="btn">Детальніше</a>
+            <button onclick="order('ПЕТ-Преформа')">Замовити</button>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61RmjCwXTZL.jpg">
+            <h3>ПЕТ-Пляшка</h3>
+            <p>Готові пляшки різних об’ємів.</p>
+            <a href="products/pet_bottle.html" class="btn">Детальніше</a>
+            <button onclick="order('ПЕТ-Пляшка')">Замовити</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.sidel.com/uploads/media/default/0001/05/e3f0d233b4a30b3fba56cd9b6d6f74a09a87ee12.jpeg">
+            <h3>Послуги з видуву пляшок</h3>
+            <p>Виготовлення ПЕТ-пляшок на замовлення.</p>
+            <a href="products/blowing_service.html" class="btn">Детальніше</a>
+            <button onclick="order('Послуги з видуву ПЕТ-пляшок')">Замовити</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="plastics" class="section">
+    <h2>Каталог термопластів</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Polyethylene_sample.jpg/640px-Polyethylene_sample.jpg">
+            <h3>Поліетилен (PE)</h3>
+            <p>Стійкий та універсальний матеріал.</p>
+            <a href="products/pe.html" class="btn">Детальніше</a>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Polypropylene.jpg/640px-Polypropylene.jpg">
+            <h3>Поліпропілен (PP)</h3>
+            <p>Термостійкий та харчовий пластик.</p>
+            <a href="products/pp.html" class="btn">Детальніше</a>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Polystyrene.jpg">
+            <h3>Полістирол (PS)</h3>
+            <p>Жорсткий та прозорий матеріал.</p>
+            <a href="products/ps.html" class="btn">Детальніше</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Контакти</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Ваше ім’я" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Повідомлення" required></textarea>
+        <button type="submit">Надіслати</button>
+    </form>
+
+</section>
+
+<footer>
+    © 2025 UKPLAST. Всі права захищені.
+</footer>
+
+<div class="modal-bg">
+    <div class="modal-box">
+        <h2>Замовлення</h2>
+        <p>Товар: <b id="modalProduct"></b></p>
+        <button onclick="closeModal()">Закрити</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
